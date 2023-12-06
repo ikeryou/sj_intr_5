@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>インタラ塾第5回 demo1</title>
+    
+    <style type="text/css">
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body, html {
+        width: 100%;
+        background-color: #FFF;
+      }
+
+      main {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        width: 100%;
+      }
+
+      .block {
+        width: 100%;
+        height: 90vh;
+        background-color: red;
+        font-size: 5vw;
+      }
+
+      .js-height-guide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1px;
+        pointer-events: none;
+      }
+      
+    </style>
+
+  </head>
+  <body>
+    <!-- このfixed要素をjsでスクロールさせる -->
+    <main class="js-scroll-tg">
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+    <script src="../libs/utils.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
